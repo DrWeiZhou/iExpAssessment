@@ -1,3 +1,8 @@
-export default function CoursesPage() {
-  return <h2>课程管理</h2>;
+import { getCourses } from "@/actions/courses";
+import { CourseListClient } from "./course-list-client";
+
+export default async function CoursesPage() {
+  const courses = await getCourses();
+
+  return <CourseListClient courses={courses} />;
 }
