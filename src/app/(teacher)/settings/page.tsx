@@ -1,3 +1,9 @@
-export default function SettingsPage() {
-  return <h2>系统设置</h2>;
+import { getSetting, getPromptTemplates } from "@/actions/settings";
+import { SettingsContent } from "./settings-content";
+
+export default async function SettingsPage() {
+  const threshold = await getSetting("plagiarism_threshold");
+  const templates = await getPromptTemplates();
+
+  return <SettingsContent threshold={threshold} templates={templates} />;
 }
