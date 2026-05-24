@@ -3,6 +3,8 @@ import { getAssignment } from "@/actions/assignments";
 import { getSubmissionsForQuestion } from "@/actions/submissions";
 import { GradingClient } from "./grading-client";
 
+export const dynamic = 'force-dynamic';
+
 export default async function GradingPage({
   params,
 }: {

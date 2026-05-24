@@ -13,6 +13,8 @@ import {
 import { PlusIcon } from "lucide-react";
 import { AssignmentListActions } from "./assignment-list-actions";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AssignmentsPage() {
   const assignments = await getAssignments();
 

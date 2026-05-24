@@ -20,6 +20,8 @@ const statusConfig = {
   },
 } as const;
 
+export const dynamic = 'force-dynamic';
+
 export default async function StudentAssignmentsPage() {
   const assignments = await getStudentAssignments();
 

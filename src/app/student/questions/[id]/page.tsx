@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { AnswerForm } from "@/components/student/answer-form";
 
+export const dynamic = 'force-dynamic';
+
 export default async function QuestionAnswerPage({
   params,
 }: {

@@ -21,6 +21,8 @@ const statusConfig = {
   },
 } as const;
 
+export const dynamic = 'force-dynamic';
+
 export default async function StudentDashboard() {
   const user = await getAuthUser();
   const assignments = await getStudentAssignments();

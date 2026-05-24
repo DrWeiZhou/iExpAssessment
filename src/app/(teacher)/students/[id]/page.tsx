@@ -6,6 +6,8 @@ import { getAuthUser } from "@/lib/auth";
 import { getStudentSubmissions } from "@/actions/submissions";
 import { StudentDetailClient } from "./student-detail-client";
 
+export const dynamic = 'force-dynamic';
+
 export default async function StudentDetailPage({
   params,
 }: {

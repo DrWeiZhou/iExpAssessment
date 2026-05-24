@@ -17,6 +17,8 @@ import { AssignmentDetailActions } from "./assignment-detail-actions";
 import { QuestionActions } from "./question-actions";
 import { QuestionAddButton } from "./question-add-button";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AssignmentDetailPage({
   params,
 }: {

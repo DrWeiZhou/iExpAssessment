@@ -11,6 +11,8 @@ import {
 import { ArrowLeft, Eye, Trash2 } from "lucide-react";
 import { RemoveStudentButton } from "./remove-student-button";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ClassDetailPage({
   params,
 }: {

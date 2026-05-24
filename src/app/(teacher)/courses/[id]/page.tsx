@@ -4,6 +4,8 @@ import { CourseDetailClient } from "./course-detail-client";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+export const dynamic = 'force-dynamic';
+
 export default async function CourseDetailPage({
   params,
 }: {

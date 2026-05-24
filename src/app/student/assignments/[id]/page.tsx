@@ -16,6 +16,8 @@ const submissionStatusConfig = {
   "已提交": { color: "text-green-600", icon: CheckCircle, label: "已提交" },
 } as const;
 
+export const dynamic = 'force-dynamic';
+
 export default async function AssignmentDetailPage({
   params,
 }: {
