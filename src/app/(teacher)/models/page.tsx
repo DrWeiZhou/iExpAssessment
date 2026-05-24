@@ -1,3 +1,8 @@
-export default function ModelsPage() {
-  return <h2>模型管理</h2>;
+import { getModels } from "@/actions/models";
+import { ModelsContent } from "./models-content";
+
+export default async function ModelsPage() {
+  const models = await getModels();
+
+  return <ModelsContent models={models} />;
 }
