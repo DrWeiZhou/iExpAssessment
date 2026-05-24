@@ -120,10 +120,13 @@
   * {
     @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
-    }
   html {
     @apply font-sans;
+    font-family: var(--font-sans), "PingFang SC", "Hiragino Sans GB",
+      "Microsoft YaHei", "WenQuanYi Micro Hei", "Noto Sans CJK SC",
+      system-ui, -apple-system, sans-serif;
+    }
+  body {
+    @apply bg-background text-foreground;
     }
 }
